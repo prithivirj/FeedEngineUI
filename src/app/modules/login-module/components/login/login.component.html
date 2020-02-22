@@ -1,0 +1,33 @@
+<div class="loginform">
+    <div class="avatar">
+        <img src="../../../../../assets/images/user-profile-image.png" alt="Avatar">
+    </div>
+    <h2>Login</h2>
+
+    <div [formGroup]="loginForm" fxLayout="column" fxLayoutAlign="space-evenly center">
+
+        <mat-form-field fxFlex class="full-width">
+            <input matInput formControlName="userName" placeholder="Enter Username">
+            <mat-error *ngIf="hasError('userName','required')"> Username is required</mat-error>
+        </mat-form-field>
+
+        <mat-form-field fxFlex class="full-width">
+            <input type="password" matInput formControlName="password" placeholder="Enter Password">
+            <mat-error *ngIf="hasError('password','required')"> Password is required</mat-error>
+        </mat-form-field>
+
+        <div fxFlex class="padding-top-15 full-width">
+            <button class="full-width" mat-flat-button color="primary">Login</button>
+        </div>
+      
+        <div fxLayout="row" fxLayoutAlign="space-around center" class="padding-top-15 full-width">
+           <div fxFlex="50">
+                <a routerLink="/login/forgot-password">Forgot your password?</a>
+           </div>
+           <div fxFlex="50" fxLayoutAlign="end center">
+                <a routerLink="/register">Don’t have an account?</a>
+           </div> 
+        </div>
+
+    </div>
+</div>

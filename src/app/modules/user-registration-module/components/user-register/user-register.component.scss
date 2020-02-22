@@ -1,0 +1,41 @@
+.user-register {
+    background: #ffffff;
+    width: 400px;
+    color: #555555;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px 20px #e0e0e0;
+}
+
+.user-register h2 {
+    font-size: 20px;
+    margin: 20px 0px;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+}
+
+.user-register a {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+    color: #555555;
+}
+
+/*-- Responsive CSS --*/
+@media(max-width: 576px) {
+    .user-register {
+        width: 90%;
+    }
+    .user-register a {
+        display: block;
+        text-align: center;
+        float: inherit !important;
+        margin: 10px 0px;
+    }
+}
